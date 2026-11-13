@@ -1,0 +1,31 @@
+{
+  "baselineGuides": 3,
+  "extendedGuides": 4,
+  "checkedFiles": [
+    "travel-guide/assets/app.js",
+    "travel-guide/assets/style.css",
+    "travel-guide/scripts/build.py",
+    "travel-guide/scripts/check.py",
+    "travel-guide/templates/guide.html",
+    "travel-guide/templates/index.html",
+    "travel-guide/templates/layout.html"
+  ],
+  "unchanged": true,
+  "phase": "新增住宿內容並重建後、瀏覽器QA前",
+  "matchingHashes": {
+    "travel-guide/assets/app.js": "79001e1c9e8324e31d369690f15f1f2365675c51bf223d6ee0bfb9be9bbee13f",
+    "travel-guide/assets/style.css": "f13e7c9783f614b26a1f3fc7e6c37f77349e67e41cf7c9f4f9c9535181a5b9de",
+    "travel-guide/scripts/build.py": "cae02161b82910bc8e5d028532c4d8f7cf996e720ea842b715e2d548b97b4d68",
+    "travel-guide/scripts/check.py": "ef26cc2d4e05ed199bb287cb71ba309204c8cd5f1506062a3d4d3ef730e3b852",
+    "travel-guide/templates/guide.html": "fd07d0639585bf0179e2848694d68999841154231e063df9df71c552840f8ffd",
+    "travel-guide/templates/index.html": "dfa87296b16ae68311c61c83b047684812fe3de976a127af7a465b40c0d74987",
+    "travel-guide/templates/layout.html": "2dbbfd1230c7d6ddaec9cecd6f2c0fa9e7d04b704df6045547743366e40fde20"
+  },
+  "subsequentQaChanges": [
+    "assets/style.css: 320px 裝飾圓環尺寸",
+    "templates/layout.html: 共用網站圖示",
+    "assets/mark.svg: 新增圖示",
+    "content/guides/hotel-check-in.json: 縮短標題"
+  ],
+  "publication": "尚未成功上傳 GitHub"
+}
