@@ -1,0 +1,280 @@
+{
+  "run_id": "20261120T061201Z",
+  "created_utc": "2026-11-20T06:12:04.424610+00:00",
+  "ingested_count": 5,
+  "ready": true,
+  "records": [
+    {
+      "id": "S01",
+      "title": "出國前小叮嚀",
+      "publisher": "外交部領事事務局",
+      "url": "https://www.boca.gov.tw/fp-98-69-2fe4e-1.html",
+      "kind": "html",
+      "published": "2024-02-07",
+      "scope": "行前查詢與旅外資訊；不據此判定個別旅客入境資格。",
+      "evidence": [
+        {
+          "id": "E01",
+          "quote": "查閱國外旅遊相關訊息"
+        }
+      ],
+      "status": "ingested",
+      "retrieved_utc": "2026-11-20T06:12:01.984644+00:00",
+      "http_status": 200,
+      "final_url": "https://www.boca.gov.tw/fp-98-69-2fe4e-1.html",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "cfd23158af91d3f600a96b42a57c1ace1f1c42c605ee28daa26e2a109fffc92a",
+      "bytes": 15840,
+      "extracted_characters": 1070,
+      "excerpt_check": "passed"
+    },
+    {
+      "id": "S02",
+      "title": "旅客須知",
+      "publisher": "交通部民用航空局",
+      "url": "https://www.caa.gov.tw/article.aspx?a=271",
+      "kind": "html",
+      "published": "2023-09-14（原頁最後更新）",
+      "scope": "一般搭機準備；報到與票務條件需回到實際航空公司核對。",
+      "evidence": [
+        {
+          "id": "E02",
+          "quote": "惟上述時間之規定可能因航空公司而不同"
+        }
+      ],
+      "status": "ingested",
+      "retrieved_utc": "2026-11-20T06:12:02.451210+00:00",
+      "http_status": 200,
+      "final_url": "https://www.caa.gov.tw/article.aspx?a=271",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "a8eaeacc7dd239f48603dcc4f7046e7c0c304ac9847b2b20511b63f643e0ecc5",
+      "bytes": 278211,
+      "extracted_characters": 6277,
+      "excerpt_check": "passed"
+    },
+    {
+      "id": "S03",
+      "title": "行李基本須知",
+      "publisher": "長榮航空",
+      "url": "https://www.evaair.com/zh-tw/fly-prepare/baggage/free-baggage/general-information/",
+      "kind": "html",
+      "published": "原文未確認明確發布日期",
+      "scope": "長榮航空的行李說明，不能推廣為所有航空公司的條件。",
+      "evidence": [
+        {
+          "id": "E03",
+          "quote": "包括託運和未託運之行李"
+        }
+      ],
+      "status": "ingested",
+      "retrieved_utc": "2026-11-20T06:12:02.691344+00:00",
+      "http_status": 200,
+      "final_url": "https://www.evaair.com/zh-tw/fly-prepare/baggage/free-baggage/general-information/",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "21d050fe1c6faf3487745a038a883f8eb55196b343158ae27da886251190b279",
+      "bytes": 151227,
+      "extracted_characters": 3294,
+      "excerpt_check": "passed"
+    },
+    {
+      "id": "S04",
+      "title": "網路訂票",
+      "publisher": "台灣高鐵",
+      "url": "https://www.thsrc.com.tw/ArticleContent/dea241a9-fe69-4e9d-b9a5-6caed6e486d6",
+      "kind": "html",
+      "published": "原文未確認明確文章更新日期",
+      "scope": "台灣高鐵網路訂票說明；取票狀態與購票通路會影響辦理方式。",
+      "evidence": [
+        {
+          "id": "E04",
+          "quote": "取票前，可透過本系統修改或退票"
+        }
+      ],
+      "status": "ingested",
+      "retrieved_utc": "2026-11-20T06:12:02.914845+00:00",
+      "http_status": 200,
+      "final_url": "https://www.thsrc.com.tw/ArticleContent/dea241a9-fe69-4e9d-b9a5-6caed6e486d6",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "58ce11ac02f982ce844fc025597dca5da0e9c204ed0f8432ed88743f9ec33ad8",
+      "bytes": 94844,
+      "extracted_characters": 4156,
+      "excerpt_check": "passed"
+    },
+    {
+      "id": "S05",
+      "title": "氣象常識問答集",
+      "discovery_title": "台灣地區的災變天氣",
+      "publisher": "交通部中央氣象局編印，現由中央氣象署網站提供",
+      "url": "https://www.cwa.gov.tw/Data/service/notice/download/publish_20200310092437.pdf",
+      "kind": "pdf",
+      "published": "2020-03（封面：中華民國109年3月）",
+      "page_index": 64,
+      "page_label": "PDF第65頁／印刷頁55，第三章第4題",
+      "scope": "僅收錄降雨機率的定義與限制，不作為今日預報或最新預報能力的說明。",
+      "evidence": [
+        {
+          "id": "E05",
+          "quote": "與降雨強度、累積雨量並無直接相關"
+        }
+      ],
+      "status": "ingested",
+      "retrieved_utc": "2026-11-20T06:12:04.422471+00:00",
+      "http_status": 200,
+      "final_url": "https://www.cwa.gov.tw/Data/service/notice/download/publish_20200310092437.pdf",
+      "content_type": "application/pdf",
+      "sha256": "ba7c4a8e29dd3cee78c8b181a8416809cb44f3ec1c2496aadac99413bf46a5f2",
+      "bytes": 1586971,
+      "extracted_characters": 560,
+      "excerpt_check": "passed"
+    }
+  ],
+  "events": [
+    {
+      "time_utc": "2026-11-20T06:12:01.722676+00:00",
+      "node": "fetch",
+      "status": "started",
+      "source": "S01",
+      "url": "https://www.boca.gov.tw/fp-98-69-2fe4e-1.html"
+    },
+    {
+      "time_utc": "2026-11-20T06:12:01.982429+00:00",
+      "node": "fetch",
+      "status": "passed",
+      "source": "S01",
+      "http_status": 200,
+      "bytes": 15840,
+      "sha256": "cfd23158af91d3f600a96b42a57c1ace1f1c42c605ee28daa26e2a109fffc92a"
+    },
+    {
+      "time_utc": "2026-11-20T06:12:01.984644+00:00",
+      "node": "excerpt_check",
+      "status": "passed",
+      "source": "S01",
+      "verified_ids": [
+        "E01"
+      ],
+      "extracted_characters": 1070
+    },
+    {
+      "time_utc": "2026-11-20T06:12:01.985749+00:00",
+      "node": "fetch",
+      "status": "started",
+      "source": "S02",
+      "url": "https://www.caa.gov.tw/article.aspx?a=271"
+    },
+    {
+      "time_utc": "2026-11-20T06:12:02.442672+00:00",
+      "node": "fetch",
+      "status": "passed",
+      "source": "S02",
+      "http_status": 200,
+      "bytes": 278211,
+      "sha256": "a8eaeacc7dd239f48603dcc4f7046e7c0c304ac9847b2b20511b63f643e0ecc5"
+    },
+    {
+      "time_utc": "2026-11-20T06:12:02.451210+00:00",
+      "node": "excerpt_check",
+      "status": "passed",
+      "source": "S02",
+      "verified_ids": [
+        "E02"
+      ],
+      "extracted_characters": 6277
+    },
+    {
+      "time_utc": "2026-11-20T06:12:02.452223+00:00",
+      "node": "fetch",
+      "status": "started",
+      "source": "S03",
+      "url": "https://www.evaair.com/zh-tw/fly-prepare/baggage/free-baggage/general-information/"
+    },
+    {
+      "time_utc": "2026-11-20T06:12:02.682496+00:00",
+      "node": "fetch",
+      "status": "passed",
+      "source": "S03",
+      "http_status": 200,
+      "bytes": 151227,
+      "sha256": "21d050fe1c6faf3487745a038a883f8eb55196b343158ae27da886251190b279"
+    },
+    {
+      "time_utc": "2026-11-20T06:12:02.691344+00:00",
+      "node": "excerpt_check",
+      "status": "passed",
+      "source": "S03",
+      "verified_ids": [
+        "E03"
+      ],
+      "extracted_characters": 3294
+    },
+    {
+      "time_utc": "2026-11-20T06:12:02.691344+00:00",
+      "node": "fetch",
+      "status": "started",
+      "source": "S04",
+      "url": "https://www.thsrc.com.tw/ArticleContent/dea241a9-fe69-4e9d-b9a5-6caed6e486d6"
+    },
+    {
+      "time_utc": "2026-11-20T06:12:02.907794+00:00",
+      "node": "fetch",
+      "status": "passed",
+      "source": "S04",
+      "http_status": 200,
+      "bytes": 94844,
+      "sha256": "58ce11ac02f982ce844fc025597dca5da0e9c204ed0f8432ed88743f9ec33ad8"
+    },
+    {
+      "time_utc": "2026-11-20T06:12:02.914845+00:00",
+      "node": "excerpt_check",
+      "status": "passed",
+      "source": "S04",
+      "verified_ids": [
+        "E04"
+      ],
+      "extracted_characters": 4156
+    },
+    {
+      "time_utc": "2026-11-20T06:12:02.915924+00:00",
+      "node": "fetch",
+      "status": "started",
+      "source": "S05",
+      "url": "https://www.cwa.gov.tw/Data/service/notice/download/publish_20200310092437.pdf"
+    },
+    {
+      "time_utc": "2026-11-20T06:12:04.182540+00:00",
+      "node": "fetch",
+      "status": "passed",
+      "source": "S05",
+      "http_status": 200,
+      "bytes": 1586971,
+      "sha256": "ba7c4a8e29dd3cee78c8b181a8416809cb44f3ec1c2496aadac99413bf46a5f2"
+    },
+    {
+      "time_utc": "2026-11-20T06:12:04.422471+00:00",
+      "node": "source_metadata",
+      "status": "issue_found",
+      "source": "S05",
+      "problem": "工具顯示題名與PDF封面不一致",
+      "candidate_title": "台灣地區的災變天氣",
+      "verified_title": "氣象常識問答集"
+    },
+    {
+      "time_utc": "2026-11-20T06:12:04.422471+00:00",
+      "node": "source_metadata",
+      "status": "resolved",
+      "source": "S05",
+      "resolution": "檢查PDF封面題名，保留實際文件日期和實體頁碼；僅使用第4題定義"
+    },
+    {
+      "time_utc": "2026-11-20T06:12:04.422471+00:00",
+      "node": "excerpt_check",
+      "status": "passed",
+      "source": "S05",
+      "verified_ids": [
+        "E05"
+      ],
+      "extracted_characters": 560
+    }
+  ],
+  "scope": "Actual HTTP fetch and excerpt verification; semantic notes are authored by AI after source review."
+}
