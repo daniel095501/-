@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "refresh_sources": false,
+  "steps": [
+    {
+      "time_utc": "2026-11-20T06:24:54.967692+00:00",
+      "node": "Wiki與教學建置",
+      "exit_code": 0,
+      "stdout": "{\"run_id\": \"20261120T062454Z\", \"time_utc\": \"2026-11-20T06:24:54.954310+00:00\", \"ingested_sources\": 5, \"wiki_pages\": 6, \"claims\": 8, \"slides\": 14, \"status\": \"passed\"}",
+      "stderr": ""
+    },
+    {
+      "time_utc": "2026-11-20T06:24:55.451541+00:00",
+      "node": "結構與連結檢查",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"passed\", \"checked_utc\": \"2026-11-20T06:24:55.442431+00:00\", \"ingested_sources\": 5, \"wiki_pages\": 6, \"teaching_slides\": 14, \"wiki_claim_mappings\": 32, \"html_pages\": 10, \"local_link_and_asset_references\": 310, \"scope\": \"結構與對應檢查；語意真偽另經來源閱讀複核\"}",
+      "stderr": ""
+    }
+  ],
+  "rerun_rule": "依failed建置紀錄的return_to修改內容後再執行；不自動捏造修訂或模型回覆。"
+}

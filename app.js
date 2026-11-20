@@ -1,57 +1,54 @@
 "use strict";
 (() => {
-  const search = document.querySelector('#guide-search');
+  const search = document.querySelector('#wiki-search');
   if (search) {
-    const cards = [...document.querySelectorAll('#guide-grid .guide-card')];
-    const filters = [...document.querySelectorAll('[data-category-filter]')];
-    let category = '全部';
-    const update = () => {
+    const cards = [...document.querySelectorAll('.wiki-card')];
+    search.addEventListener('input', () => {
       const query = search.value.trim().toLocaleLowerCase();
       let visible = 0;
-      cards.forEach(card => {
-        card.hidden = !(category === '全部' || card.dataset.category === category) || !card.dataset.search.toLocaleLowerCase().includes(query);
-        if (!card.hidden) visible++;
-      });
-      document.querySelector('#result-status').textContent = `顯示 ${visible} / ${cards.length} 篇指南`;
-      document.querySelector('#empty-state').hidden = visible !== 0;
-      filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.categoryFilter === category)));
-    };
-    search.addEventListener('input', update);
-    filters.forEach(button => button.addEventListener('click', () => { category = button.dataset.categoryFilter; update(); }));
-    document.querySelector('#clear-filters').addEventListener('click', () => { search.value = ''; category = '全部'; update(); search.focus(); });
-    update();
+      cards.forEach(card => { card.hidden = !card.dataset.search.toLocaleLowerCase().includes(query); if (!card.hidden) visible++; });
+      document.querySelector('#wiki-count').textContent = `顯示 ${visible}／${cards.length} 篇知識頁`;
+      document.querySelector('#wiki-empty').hidden = visible > 0;
+    });
   }
-  const article = document.querySelector('[data-guide]');
-  if (!article) return;
-  const key = `trip-ready:v1:${article.dataset.guide}`;
-  const boxes = [...article.querySelectorAll('input[type=checkbox]')];
-  const ids = new Set(boxes.map(box => box.dataset.checkId));
-  const status = article.querySelector('#storage-status');
-  let storageAvailable = true;
-  try {
-    const raw = localStorage.getItem(key);
-    const saved = raw === null ? [] : JSON.parse(raw);
-    if (!Array.isArray(saved) || saved.some(id => typeof id !== 'string')) throw new Error('Invalid saved checklist');
-    boxes.forEach(box => { box.checked = saved.includes(box.dataset.checkId); });
-  } catch (_) {
-    storageAvailable = false;
-    status.textContent = '無法讀取儲存資料；本次仍可勾選，但進度不會保存。';
-  }
-  const render = () => {
-    const count = boxes.filter(box => box.checked).length;
-    article.querySelector('#check-count').textContent = `${count} / ${boxes.length}`;
-    article.querySelector('#check-progress').value = count;
+  const slides = [...document.querySelectorAll('.slide')];
+  if (!slides.length) return;
+  const controls = document.querySelector('.deck-controls');
+  const select = document.querySelector('#slide-select');
+  const prev = document.querySelector('#slide-prev');
+  const next = document.querySelector('#slide-next');
+  let current = 0;
+  const show = (index, scroll = true) => {
+    current = Math.min(slides.length - 1, Math.max(0, index));
+    slides.forEach((slide,i) => { slide.hidden = i !== current; });
+    select.value = String(current);
+    prev.disabled = current === 0;
+    next.disabled = current === slides.length - 1;
+    document.querySelector('#slide-status').textContent = `第${current+1}頁，共${slides.length}頁：${slides[current].querySelector('h2').textContent}`;
+    try { history.replaceState(null, '', '#'+slides[current].id); } catch (_) { /* File preview still permits reading and navigation. */ }
+    if (scroll) window.scrollTo({top:0,behavior:'instant'});
   };
-  const save = () => {
-    if (storageAvailable) {
-      try { localStorage.setItem(key, JSON.stringify(boxes.filter(box => box.checked).map(box => box.dataset.checkId).filter(id => ids.has(id)))); }
-      catch (_) { storageAvailable = false; status.textContent = '無法保存進度；本次仍可勾選，離開後可能不會保留。'; }
-    }
-    render();
-  };
-  boxes.forEach(box => box.addEventListener('change', save));
-  const reset = article.querySelector('#reset-checklist');
-  reset.hidden = false;
-  reset.addEventListener('click', () => { boxes.forEach(box => { box.checked = false; }); save(); });
-  render();
+  const fromHash = () => { const i = slides.findIndex(slide => '#'+slide.id === location.hash); show(i < 0 ? 0 : i, false); };
+  controls.hidden = false;
+  prev.addEventListener('click',()=>show(current-1));
+  next.addEventListener('click',()=>show(current+1));
+  select.addEventListener('change',()=>show(Number(select.value)));
+  window.addEventListener('hashchange',fromHash);
+  document.addEventListener('keydown',event=>{
+    if (event.altKey || event.ctrlKey || event.metaKey || event.target.closest('input,textarea,select,[contenteditable=true]')) return;
+    const movement = {ArrowRight:current+1,PageDown:current+1,ArrowLeft:current-1,PageUp:current-1,Home:0,End:slides.length-1};
+    if (Object.prototype.hasOwnProperty.call(movement,event.key)) { event.preventDefault(); show(movement[event.key]); }
+  });
+  document.querySelectorAll('.quiz').forEach(quiz=>{
+    const button=quiz.querySelector('.check-answer');button.hidden=false;
+    button.addEventListener('click',()=>{
+      const selected=quiz.querySelector('input:checked');
+      const feedback=quiz.querySelector('.quiz-feedback');
+      if (!selected) { quiz.dataset.result='empty'; feedback.textContent='請先選一個答案，再確認。'; return; }
+      const correct=selected.value===quiz.dataset.answer;
+      quiz.dataset.result=correct?'correct':'retry';
+      feedback.textContent=(correct?'判斷正確。':'再核對一次。')+quiz.dataset.feedback;
+    });
+  });
+  fromHash();
 })();

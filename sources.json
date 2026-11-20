@@ -1,0 +1,7 @@
+[
+  {"id":"S01","title":"出國前小叮嚀","publisher":"外交部領事事務局","url":"https://www.boca.gov.tw/fp-98-69-2fe4e-1.html","kind":"html","published":"2024-02-07","scope":"行前查詢與旅外資訊；不據此判定個別旅客入境資格。","evidence":[{"id":"E01","quote":"查閱國外旅遊相關訊息"}]},
+  {"id":"S02","title":"旅客須知","publisher":"交通部民用航空局","url":"https://www.caa.gov.tw/article.aspx?a=271","kind":"html","published":"2023-09-14（原頁最後更新）","scope":"一般搭機準備；報到與票務條件需回到實際航空公司核對。","evidence":[{"id":"E02","quote":"惟上述時間之規定可能因航空公司而不同"}]},
+  {"id":"S03","title":"行李基本須知","publisher":"長榮航空","url":"https://www.evaair.com/zh-tw/fly-prepare/baggage/free-baggage/general-information/","kind":"html","published":"原文未確認明確發布日期","scope":"長榮航空的行李說明，不能推廣為所有航空公司的條件。","evidence":[{"id":"E03","quote":"包括託運和未託運之行李"}]},
+  {"id":"S04","title":"網路訂票","publisher":"台灣高鐵","url":"https://www.thsrc.com.tw/ArticleContent/dea241a9-fe69-4e9d-b9a5-6caed6e486d6","kind":"html","published":"原文未確認明確文章更新日期","scope":"台灣高鐵網路訂票說明；取票狀態與購票通路會影響辦理方式。","evidence":[{"id":"E04","quote":"取票前，可透過本系統修改或退票"}]},
+  {"id":"S05","title":"氣象常識問答集","discovery_title":"台灣地區的災變天氣","publisher":"交通部中央氣象局編印，現由中央氣象署網站提供","url":"https://www.cwa.gov.tw/Data/service/notice/download/publish_20200310092437.pdf","kind":"pdf","published":"2020-03（封面：中華民國109年3月）","page_index":64,"page_label":"PDF第65頁／印刷頁55，第三章第4題","scope":"僅收錄降雨機率的定義與限制，不作為今日預報或最新預報能力的說明。","evidence":[{"id":"E05","quote":"與降雨強度、累積雨量並無直接相關"}]}
+]

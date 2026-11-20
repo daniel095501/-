@@ -1,0 +1,52 @@
+{
+  "reviewed_utc": "2026-11-20T06:17:28.079306+00:00",
+  "actor": "本次對話中的AI，閱讀實際來源後整理",
+  "automatic_truth_verdict": false,
+  "sources": [
+    {
+      "id": "S01",
+      "sha256": "cfd23158af91d3f600a96b42a57c1ace1f1c42c605ee28daa26e2a109fffc92a",
+      "approved": true,
+      "verified_title": "出國前小叮嚀",
+      "source_date": "2024-02-07",
+      "scope": "行前查詢與旅外資訊；不據此判定個別旅客入境資格。",
+      "limits_confirmed": true
+    },
+    {
+      "id": "S02",
+      "sha256": "a8eaeacc7dd239f48603dcc4f7046e7c0c304ac9847b2b20511b63f643e0ecc5",
+      "approved": true,
+      "verified_title": "旅客須知",
+      "source_date": "2023-09-14（原頁最後更新）",
+      "scope": "一般搭機準備；報到與票務條件需回到實際航空公司核對。",
+      "limits_confirmed": true
+    },
+    {
+      "id": "S03",
+      "sha256": "21d050fe1c6faf3487745a038a883f8eb55196b343158ae27da886251190b279",
+      "approved": true,
+      "verified_title": "行李基本須知",
+      "source_date": "原文未確認明確發布日期",
+      "scope": "長榮航空的行李說明，不能推廣為所有航空公司的條件。",
+      "limits_confirmed": true
+    },
+    {
+      "id": "S04",
+      "sha256": "58ce11ac02f982ce844fc025597dca5da0e9c204ed0f8432ed88743f9ec33ad8",
+      "approved": true,
+      "verified_title": "網路訂票",
+      "source_date": "原文未確認明確文章更新日期",
+      "scope": "台灣高鐵網路訂票說明；取票狀態與購票通路會影響辦理方式。",
+      "limits_confirmed": true
+    },
+    {
+      "id": "S05",
+      "sha256": "ba7c4a8e29dd3cee78c8b181a8416809cb44f3ec1c2496aadac99413bf46a5f2",
+      "approved": true,
+      "verified_title": "氣象常識問答集",
+      "source_date": "2020-03（封面：中華民國109年3月）",
+      "scope": "僅收錄降雨機率的定義與限制，不作為今日預報或最新預報能力的說明。",
+      "limits_confirmed": true
+    }
+  ]
+}

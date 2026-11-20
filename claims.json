@@ -1,0 +1,10 @@
+[
+ {"id":"M01","kind":"method","wiki":"verification-method","title":"用四個欄位查核資訊","text":"先記下發布單位、資料日期、適用對象與限制條件，再決定能否用在自己的行程。","sources":["S01","S02","S03","S04","S05"],"evidence":[],"keywords":["來源","日期","範圍","查核"]},
+ {"id":"M02","kind":"method","wiki":"verification-method","title":"把原文與自己的行動分開","text":"筆記分成「來源明確說什麼」和「我接下來要確認什麼」，讓建議不會被誤認為原文規定。","sources":["S01","S02","S03","S04","S05"],"evidence":[],"keywords":["筆記","行動","原文"]},
+ {"id":"M03","kind":"method","wiki":"verification-method","title":"資料不足時先保留問題","text":"來源沒有回答、版本不明或條件不同時，先列為待查證，回到對應官方單位或業者確認。","sources":["S01","S02","S03","S04","S05"],"evidence":[],"keywords":["不足","衝突","待查證"]},
+ {"id":"F01","kind":"source_fact","wiki":"preflight-check","title":"行前要查旅外資訊","text":"領務局的行前提醒包含主動查詢國外旅行相關資訊。","sources":["S01"],"evidence":["E01"],"keywords":["領務局","行前","準備"]},
+ {"id":"F02","kind":"source_fact","wiki":"airline-conditions","title":"一般須知還要核對實際業者","text":"民航局提醒，文中列出的報到時間可能因航空公司不同，應再向實際業者確認。","sources":["S02"],"evidence":["E02"],"keywords":["航空公司","報到","條件"]},
+ {"id":"F03","kind":"source_fact","wiki":"baggage-types","title":"先分辨行李類型","text":"長榮航空的說明中，行李包含託運與未託運兩種。","sources":["S03"],"evidence":["E03"],"keywords":["行李","託運","手提"]},
+ {"id":"F04","kind":"source_fact","wiki":"ticket-status","title":"票務說明有適用條件","text":"高鐵網路訂票頁面將部分修改或退票的說明放在「取票前」情境下。","sources":["S04"],"evidence":["E04"],"keywords":["高鐵","取票","退票","通路"]},
+ {"id":"F05","kind":"source_fact","wiki":"rain-probability","title":"降雨可能性不等於雨量大小","text":"氣象教材把降雨機率與降雨強度、累積雨量區分，不能只用機率高低推定雨勢大小。","sources":["S05"],"evidence":["E05"],"keywords":["天氣","降雨","機率","雨量"]}
+]

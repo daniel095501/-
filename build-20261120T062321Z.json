@@ -1,0 +1,84 @@
+{
+  "run_id": "20261120T062321Z",
+  "time_utc": "2026-11-20T06:23:21.270805+00:00",
+  "ingested_sources": 5,
+  "wiki_pages": 6,
+  "claims": 8,
+  "slides": 14,
+  "status": "passed",
+  "events": [
+    {
+      "time_utc": "2026-11-20T06:23:21.137334+00:00",
+      "node": "source_gate",
+      "status": "started"
+    },
+    {
+      "time_utc": "2026-11-20T06:23:21.154019+00:00",
+      "node": "source_gate",
+      "status": "passed",
+      "sources": 5,
+      "reviewer": "本次對話中的AI，閱讀實際來源後整理"
+    },
+    {
+      "time_utc": "2026-11-20T06:23:21.179237+00:00",
+      "node": "claim_review",
+      "status": "started"
+    },
+    {
+      "time_utc": "2026-11-20T06:23:21.179237+00:00",
+      "node": "claim_review",
+      "status": "passed",
+      "facts": 5,
+      "methods": 3,
+      "semantic_review": "docs/curation-review.json; program checks references, not truth"
+    },
+    {
+      "time_utc": "2026-11-20T06:23:21.179237+00:00",
+      "node": "wiki_generation",
+      "status": "started"
+    },
+    {
+      "time_utc": "2026-11-20T06:23:21.183520+00:00",
+      "node": "wiki_generation",
+      "status": "passed",
+      "knowledge_pages": 6,
+      "cross_links": 14
+    },
+    {
+      "time_utc": "2026-11-20T06:23:21.183520+00:00",
+      "node": "wiki_query",
+      "status": "started"
+    },
+    {
+      "time_utc": "2026-11-20T06:23:21.270805+00:00",
+      "node": "wiki_query",
+      "status": "passed",
+      "slide_queries": 14,
+      "retrieved_claims": 32
+    },
+    {
+      "time_utc": "2026-11-20T06:23:21.270805+00:00",
+      "node": "lesson_audit",
+      "status": "started"
+    },
+    {
+      "time_utc": "2026-11-20T06:23:21.270805+00:00",
+      "node": "lesson_audit",
+      "status": "passed",
+      "slides": 14,
+      "mapped_source_documents": 5,
+      "quiz_questions": 3
+    },
+    {
+      "time_utc": "2026-11-20T06:23:21.270805+00:00",
+      "node": "html_generation",
+      "status": "started"
+    },
+    {
+      "time_utc": "2026-11-20T06:23:21.296271+00:00",
+      "node": "html_generation",
+      "status": "passed",
+      "generated_pages": 10
+    }
+  ]
+}
